@@ -50,27 +50,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-.nav-actions {
+.nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
+    z-index: 1001;
 }
 
 .nav-toggle {
     display: none !important;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: -9999px;
 }
 
 .nav-toggle-label {
     display: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
 }
 
 .nav-toggle-label span,
