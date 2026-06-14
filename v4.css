@@ -484,6 +484,7 @@ body {
     .hero-text h1 { font-size: 3rem; letter-spacing: -1.5px; }
     .hero-sub { margin-left: auto; margin-right: auto; font-size: 1.2rem; }
     .hero-actions { justify-content: center; flex-wrap: wrap; }
+    .hero-stats-box { margin: 0 auto; width: fit-content; min-width: 280px; }
     .impact-grid { grid-template-columns: repeat(2, 1fr); }
     .stack-grid { grid-template-columns: 1fr; gap: 40px; }
     .edu-grid { grid-template-columns: 1fr; }
@@ -492,28 +493,24 @@ body {
 
 @media (max-width: 768px) {
     .v4-nav { padding: 15px 0; }
-    .nav-menu { display: none; } /* Hide menu on mobile or could convert to hamburger */
+    .nav-menu { display: none; } /* Hide menu on mobile */
     .brand { font-size: 1.25rem; }
     
-    .v4-hero { padding: 140px 0 80px; }
-    .hero-text h1 { font-size: 2.5rem; line-height: 1.1; }
-    .hero-sub { font-size: 1.1rem; }
+    .v4-hero { padding: 120px 0 60px; }
+    .hero-flex { gap: 30px; flex-direction: column; align-items: center; }
+    .hero-text h1 { font-size: 2.5rem; line-height: 1.1; margin-bottom: 20px; text-align: center; }
+    .hero-sub { font-size: 1.1rem; margin-bottom: 30px; text-align: center; }
     
-    .stat-large .count { font-size: 4rem; }
-    
-    .impact-grid { grid-template-columns: 1fr; }
-    .impact-item { padding: 30px; }
-    
-    .section-title { font-size: 2rem; margin-bottom: 40px; }
-    
-    .footer-wrap { flex-direction: column; gap: 24px; text-align: center; }
+    .hero-stats-box { padding: 30px; border-radius: 24px; width: 100%; max-width: 300px; margin: 0 auto; display: block; }
+    .stat-large .count { font-size: 3.5rem; text-align: center; display: block; }
+    .stat-large .label { font-size: 0.9rem; text-align: center; display: block; }
 }
 
 @media (max-width: 480px) {
     .container { padding: 0 20px; }
     .hero-text h1 { font-size: 2.2rem; }
     .btn-main { width: 100%; text-align: center; padding: 16px 20px; }
-    .hero-actions { gap: 20px; }
+    .hero-actions { gap: 20px; justify-content: center; }
     .time-header { display: flex; flex-direction: column; gap: 5px; }
     .company { margin-right: 0; }
 }
