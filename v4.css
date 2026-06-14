@@ -52,15 +52,36 @@ body {
     align-items: center;
 }
 
+.brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.brand span {
+    color: var(--primary);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: 32px;
+}
+
 .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
-    z-index: 1001;
 }
 
 .nav-toggle {
     display: none !important;
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 
 .nav-toggle-label {
@@ -88,22 +109,6 @@ body {
 
 .nav-toggle-label span::before { bottom: 8px; }
 .nav-toggle-label span::after { top: 8px; }
-
-.brand {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.brand span {
-    color: var(--primary);
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
 
 .nav-menu a {
     text-decoration: none;
